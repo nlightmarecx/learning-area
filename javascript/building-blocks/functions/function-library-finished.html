@@ -28,6 +28,14 @@
       return num * num * num;
     }
 
+    function square_rooted(num) {
+      return num / num;
+    }
+
+    function cube_rooted(num) {
+      return num / num / num;
+    }
+
     function factorial(num) {
       let x = num;
       while (x > 1) {
@@ -45,6 +53,8 @@
       } else {
         para.textContent = `${num} squared is ${squared(num)}. `;
         para.textContent += `${num} cubed is ${cubed(num)}. `;
+        para.textContent = `${num} square rooted is ${square_rooted(num)}. `;
+        para.textContent += `${num} cube rooted is ${cube_rooted(num)}. `;
         para.textContent += `${num} factorial is ${factorial(num)}. `;
       }
     });
